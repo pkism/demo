@@ -47,7 +47,7 @@ public class CalculatorController {
 	  }
 	  
 	  @GetMapping("/getsquare/{a}")
-	  public int square(@PathVariable int a)
+	  public static int square(@PathVariable int a)
 	  {
 		  return a*a;
 	  }
