@@ -14,25 +14,25 @@ public class CalculatorController {
 
 	
 	  @GetMapping("/getadd/{a}/{b}")
-	  public int add(@PathVariable int a,@PathVariable int b)
+	  public static int add(@PathVariable int a,@PathVariable int b)
 	  {
 		  return a+b;
 	  }
 	  
 	  @GetMapping("/getsub/{a}/{b}")
-	  public int sub(@PathVariable int a,@PathVariable int b)
+	  public static int sub(@PathVariable int a,@PathVariable int b)
 	  {
 		  return a-b;
 	  }
 	  
 	  @GetMapping("/getmul/{a}/{b}")
-	  public int mul(@PathVariable int a,@PathVariable int b)
+	  public static int mul(@PathVariable int a,@PathVariable int b)
 	  {
 		  return a*b;
 	  }
 	
 	  @GetMapping("/getdiv/{a}/{b}")
-	  public double div(@PathVariable double a,@PathVariable double b)
+	  public static double div(@PathVariable double a,@PathVariable double b)
 	  {
 		  if(b!=0)
 		  {

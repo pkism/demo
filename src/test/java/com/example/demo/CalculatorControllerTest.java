@@ -3,34 +3,33 @@ package com.example.demo;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import com.example.demo.*;
+
+import com.example.demo.CalculatorController;
 
 class CalculatorControllerTest {
 
-	@Autowired
-	CalculatorController calculator;
+	
 	
 	@Test
 	public void testadd()
 	{
-		System.out.println(calculator.add(2, 3));
-		assertEquals(5, calculator.add(2, 3));
+		
+		assertEquals(5, CalculatorController.add(2, 3));
 	}
 	@Test
 	public void testsub()
 	{
-		assertEquals(7, calculator.sub(12, 5));
+		assertEquals(7, CalculatorController.sub(12, 5));
 	}
 	@Test
 	public void testmul()
 	{
-		assertEquals(25, calculator.mul(5, 5));
+		assertEquals(25, CalculatorController.mul(5, 5));
 	}
 	@Test
 	public void testdiv()
 	{
-		assertEquals(5, calculator.div(25, 5));
+		assertEquals(5, CalculatorController.div(25, 5));
 	}
 
 }
