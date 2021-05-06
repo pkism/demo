@@ -55,7 +55,6 @@ public class CalculatorController {
 	  @GetMapping("/getcube/{a}")
 	  public int cube(@PathVariable int a)
 	  {
-		  int temp=a*a;
-		  return temp*a;
+		  return a*a*a;
 	  }
 }
