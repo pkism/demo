@@ -46,15 +46,11 @@ public class CalculatorController {
 		  }
 	  }
 	  
-	  @GetMapping("/getsquare/{a}")
-	  public static int square(@PathVariable int a)
-	  {
-		  return a*a;
-	  }
-	  
-	  @GetMapping("/getcube/{a}")
-	  public int cube(@PathVariable int a)
-	  {
-		  return a*a*a;
-	  }
+		/*
+		 * @GetMapping("/getsquare/{a}") public static int square(@PathVariable int a) {
+		 * return a*a; }
+		 * 
+		 * @GetMapping("/getcube/{a}") public int cube(@PathVariable int a) { return
+		 * a*a*a; }
+		 */
 }

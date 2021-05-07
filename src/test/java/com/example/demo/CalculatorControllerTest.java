@@ -31,9 +31,8 @@ class CalculatorControllerTest {
 	{
 		assertEquals(5, CalculatorController.div(25, 5));
 	}
-	@Test
-    public void testsquare()
-    {
-    	assertEquals(25, CalculatorController.square(5));
-    }
+	/*
+	 * @Test public void testsquare() { assertEquals(25,
+	 * CalculatorController.square(5)); }
+	 */
 }
